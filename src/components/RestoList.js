@@ -28,7 +28,7 @@ class RestoList extends Component {
                     <div>
                     <Table striped bordered hover>
                     <thead>
-                        <tr className="text-center"><th colspan="6"><h4>List of Restaurant</h4></th></tr>
+                        <tr className="text-center"><th colspan="6"><h4>List of Restaurant Name</h4></th></tr>
                       <tr>
                         <th>#</th>
                         <th>Resto Name</th>
