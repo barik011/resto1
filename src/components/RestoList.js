@@ -12,7 +12,7 @@ class RestoList extends Component {
         }
     }
     componentDidMount(){
-        fetch("http://localhost:3001/resto").then((response)=>{
+        fetch("http://localhost:3000/restaurant").then((response)=>{
             response.json().then((result)=>{
                 this.setState({list:result})
             })

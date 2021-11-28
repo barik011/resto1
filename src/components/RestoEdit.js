@@ -13,7 +13,7 @@ class RestoUpdate extends Component {
     }
 
     componentDidMount(){
-        fetch('http://localhost:3001/resto/'+this.props.match.params.id).then((resp)=>{
+        fetch('http://localhost:3000/restaurant'+this.props.match.params.id).then((resp)=>{
             resp.json().then((result)=>{
                 // console.warn(result)
                 this.setState({
@@ -27,7 +27,7 @@ class RestoUpdate extends Component {
         })
     }
     update() {
-        fetch('http://localhost:3001/resto/'+this.state.id, {
+        fetch('http://localhost:3000/restaurant'+this.state.id, {
             method:'PUT',
             headers:{
                 'Content-Type':'application/json'

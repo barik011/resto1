@@ -12,7 +12,7 @@ class RestoCreate extends Component {
     }
 
     create(){
-        fetch('http://localhost:3001/resto',
+        fetch('http://localhost:3000/restaurant',
         { 
             method:'Post', 
             headers:{

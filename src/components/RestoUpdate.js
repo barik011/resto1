@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Redirect } from 'react-router';
 
 class RestoUpdate extends Component {
 
@@ -13,7 +14,7 @@ class RestoUpdate extends Component {
     }
 
     componentDidMount(){
-        fetch('http://localhost:3001/resto/'+this.props.match.params.id).then((resp)=>{
+        fetch('http://localhost:3000/restaurant/'+this.props.match.params.id).then((resp)=>{
             resp.json().then((result)=>{
                 // console.warn(result)
                 this.setState({
@@ -27,7 +28,7 @@ class RestoUpdate extends Component {
         })
     }
     update() {
-        fetch('http://localhost:3001/resto/'+this.state.id, {
+        fetch('http://localhost:3000/restaurant/'+this.state.id, {
             method:'PUT',
             headers:{
                 'Content-Type':'application/json'
@@ -35,7 +36,7 @@ class RestoUpdate extends Component {
             body: JSON.stringify(this.state)
         }).then((result)=>{
             result.json().then((response)=>{
-                alert('Data has been updated')
+                alert('Data has been updated');                
             }
             )
         })

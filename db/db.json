@@ -1,0 +1,39 @@
+{
+  "restaurant": [
+    {
+      "id": 1,
+      "name": "MacDoland",
+      "email": "info@macdoland.com",
+      "rating": "4.2",
+      "address": "New Delhi"
+    },
+    {
+      "id": 2,
+      "name": "Dominis",
+      "email": "info@dominis.com",
+      "rating": "4.8",
+      "address": "Noida"
+    },
+    {
+      "id": 3,
+      "name": "Piza Hut",
+      "email": "info@pizahut.com",
+      "rating": "4.0",
+      "address": "Gurgaon"
+    },
+    {
+      "id": 4,
+      "name": "Big Burger",
+      "email": "info@bigburger.com",
+      "rating": "4.1",
+      "address": "Delhi"
+    },
+    {
+      "name": "cafee",
+      "email": "info@cafee.com",
+      "rating": "6",
+      "address": "Bihar",
+      "id": 5
+    }
+  ]
+}
